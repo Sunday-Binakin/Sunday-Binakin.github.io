@@ -15,7 +15,22 @@
   padding: 80px;
   position: sticky;
   align-self: start;
+  /* position: sticky; */
+  top: 0;
 
+}
+.details-container .link-to-resume{
+  margin-left: 10px;
+  text-decoration: none;
+  margin-right: -60px;
+}
+.resume{
+  margin-left: 10px;
+  text-decoration: none;
+  margin-right: -900px;
+}
+.nav-bar hr{
+  margin: 5px;
 }
 .underline{
   display: flex;
@@ -41,6 +56,7 @@ p {
   flex-direction: column;
   padding-left: 60px;
   padding-right: 60px;
+  overflow: scroll;
   /* padding-bottom: 0px; */
   /* padding-: 60px; */
 /* height: 10px;   */
@@ -152,8 +168,17 @@ p {
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  list-style-type: none;
+}
+/* Change the background color when hovered */
+.nav-bar ul li a:hover {
+  background-color: #C5D1EC;
 }
 
+/* Optional: style for the active class */
+.nav-bar ul li a.active {
+  background-color: #101A35;
+}
 .line {
   margin-top: -030px;
 }
@@ -165,6 +190,7 @@ p {
 .details-container {
   display: flex;
   flex-direction: column;
+  /* position: fixed; */
 }
 
 .img-section {
