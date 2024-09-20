@@ -426,3 +426,60 @@ ul {
 
 /* font-size:24px */
 /** end of carc **/
+
+.certification-container{
+  display: flex;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+  /* width: 100%; */
+  margin-bottom: 10px;
+  /* background-color: red; */
+}
+.certification-container:hover{
+  box-shadow: 0 8px 16px 0 rgba(160, 63, 63, 0.2); 
+}
+.data-science-container{
+  width: 300px;
+  height: 200px;
+  /* background-color: #007bff; */
+}
+.cloud-container{
+  width: 300px;
+  height: 200px;
+  /* background-color: aqua; */
+}
+.ds-img{
+  width: 100%;
+}
+.ds-img img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.ds-p{
+  font-size: 20px; 
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+.c-img{
+  width: 100%;
+}
+.c-img img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+.c-p{
+  font-size: 30px; 
+  /* justify-content: center; */
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
