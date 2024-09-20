@@ -1,6 +1,13 @@
 * {
   /* background-color: #101A35;   */
+  /* background-color: red;
+  animation-name: example;
+  animation-duration: 10s; */
 }
+/* @keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+} */
 
 .main-container {
   display: grid;
@@ -166,26 +173,40 @@ p {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 0px;
+  grid-column-gap: 50px;
   grid-row-gap: 0px;
   list-style-type: none;
+  text-decoration: none;
 }
 /* Change the background color when hovered */
 .nav-bar ul li a:hover {
   background-color: #C5D1EC;
 }
-
-/* Optional: style for the active class */
-.nav-bar ul li a.active {
-  background-color: #101A35;
+ul {
+  list-style: none;
+  text-decoration: none;
 }
+/* Optional: style for the active class */
+/* .nav-bar ul li a.active {
+  background-color: #101A35;
+} */
 .line {
   margin-top: -030px;
 }
 
 .nav-bar a {
-  color: #C4D1EC;
+  color: black;
+  text-decoration: none;
+  margin-top: 10px;
+  padding: 10px; /* Add padding for button-like appearance */
+  /* border: 1px solid #b98181; Add border for button-like appearance */
+  border-radius: 5px; 
 }
+.nav-bar a.active {
+  color: red; /* Active color */
+  background-color: #333; /* Button-like background color */
+
+} 
 
 .details-container {
   display: flex;
