@@ -1,5 +1,5 @@
 * {
-  /* background-color: #101A35;   */
+  background-color: #101A35;  
   /* background-color: red;
   animation-name: example;
   animation-duration: 10s; */
@@ -17,13 +17,21 @@
   grid-row-gap: 0px;
   /* background-color: #5d616d; */
 }
+.profile-details h1,h2,p{
+  color: white;
+  text-align: justify;
+}
 
 .profile-details {
-  padding: 80px;
+  padding-left: 80px;
+  padding-bottom: 80px;
+  padding-top: 80px;
   position: sticky;
   align-self: start;
-  /* position: sticky; */
+   /* align-items: ; */
   top: 0;
+  display: flex;
+  flex-direction: column;
 
 }
 .details-container .link-to-resume{
@@ -63,7 +71,9 @@ p {
   flex-direction: column;
   padding-left: 60px;
   padding-right: 60px;
-  overflow: scroll;
+  /* overflow: scroll; */
+  overflow-y: auto;
+  overflow-x: hidden;
   /* padding-bottom: 0px; */
   /* padding-: 60px; */
 /* height: 10px;   */
@@ -106,6 +116,20 @@ p {
   max-width: 520px;
   max-height: 270px;
   margin-top: 40px;
+}
+.about_me{
+  color: #00FFFF;
+}
+.cv-card:hover {
+  transform: translateY(-5%) scale(1.05);
+  z-index: 100;
+  color: white;
+  /* background-color: red; */
+}
+
+.cv-card:hover .date-section,
+.cv-card:hover .cv-section {
+  opacity: 1;
 }
 .experience-card {
   background-color: #101A35;
@@ -179,17 +203,39 @@ p {
   text-decoration: none;
 }
 /* Change the background color when hovered */
-.nav-bar ul li a:hover {
+/* .nav-bar ul li a:hover {
   background-color: #C5D1EC;
 }
 ul {
   list-style: none;
   text-decoration: none;
-}
+} */
 /* Optional: style for the active class */
 /* .nav-bar ul li a.active {
   background-color: #101A35;
 } */
+.nav-bar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar ul li {
+  /* display: inline-block; */
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: #00FFFF;
+  transition: color 0.3s ease;
+}
+
+.nav-bar ul li a.active {
+  color: #007bff; /* Change this to your desired active color */
+}
 .line {
   margin-top: -030px;
 }
@@ -281,7 +327,7 @@ ul {
     margin-bottom: 15px;
   } */
 .date-section {
-  margin-right: 5px;
+  margin-right: 40px;
 }
 
 .tags li {

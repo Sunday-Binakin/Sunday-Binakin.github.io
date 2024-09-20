@@ -36,3 +36,24 @@ window.addEventListener('scroll', () => {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const links = document.querySelectorAll('.nav-bar ul li a');
+  
+  links.forEach(link => {
+    link.addEventListener('click', function(event) {
+      event.preventDefault();
+      
+      // Remove active class from all links
+      links.forEach(l => l.classList.remove('active'));
+      
+      // Add active class to clicked link
+      this.classList.add('active');
+      
+      // Scroll to the target element
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+});
