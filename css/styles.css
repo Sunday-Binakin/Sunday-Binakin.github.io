@@ -145,6 +145,7 @@ p {
   max-width: 520px;
   max-height: 290px;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 .project-card {
   background-color: #101A35;
@@ -321,7 +322,7 @@ ul {
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 12px rgba(201, 56, 56, 0.15);
 }
 
 /* .card img {
