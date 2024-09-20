@@ -17,9 +17,12 @@
   grid-row-gap: 0px;
   /* background-color: #5d616d; */
 }
-.profile-details h1,h2,p{
+.profile-details h1,h2,p,span{
   color: white;
   text-align: justify;
+}
+.fas,.fa-download{
+  color: white
 }
 
 .profile-details {
@@ -173,6 +176,7 @@ p {
   margin-left: -120px;
   margin-top: -10px;
   color: #C4D0EC;
+  margin-left: -200px;
 }
 .yearly-project{
   display: flex;
@@ -180,7 +184,7 @@ p {
 }
 .yearly-year{
   /* margin-top: -10px; */
-  margin-left: -120px;
+  margin-left: -200px;
  text-align: left;
  color: #C4D0EC;
 }
@@ -265,7 +269,7 @@ ul {
 }
 
 .img-section img {
-  width: 80%;
+  width: 150%;
   height: 30%;
 }
 
@@ -339,6 +343,12 @@ ul {
   cursor: pointer;
   font-size: 20px;
   text-decoration: none;
+  /* width: 600px; */
+  margin-left: 65px;
+  height: 70px;
+  border-radius: 10px;
+  margin-top: 40px;
+  /* margin-right: 135px; */
 }
 .btn-cv-download a{
   text-decoration: none;
@@ -385,6 +395,9 @@ ul {
 }
 
 .checked {
+  color: orange;
+}
+.fa-star-half {
   color: orange;
 }
 
